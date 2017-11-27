@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#1stbutton").click(function(){
+                $("p").append("<b>Appended text.</b>");
+            });
+
+            $("#2ndbutton").click(function(){
+                $("ol").append("<li>Appended item</li>");
+            });
+
+        });
+    </script>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<!--When 1st button is clicked, "Appended text" will show up after ordered paragraph.-->
+<ol>
+    <li> List item 1</li>
+    <li> List item 2</li>
+    <li> List item 3</li>
+</ol>
+<!--When 2nd button is clicked, "Appended item" will show up after ordered list.-->
+<button id="1stbutton">Append text </button>
+<button id="2ndbutton">Append list items </button>
+</body>
+</html>
